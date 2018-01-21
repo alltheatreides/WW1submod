@@ -55,7 +55,7 @@ create_corps_commander={  name = "de Witte de Haelen" id=9012 portrait_path="gfx
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -158,7 +158,7 @@ create_corps_commander={  name = "de Witte de Haelen" id=9012 portrait_path="gfx
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

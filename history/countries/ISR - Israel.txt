@@ -2,7 +2,7 @@
 capital = 554
 
 # Starting tech
-set_technology = {
+set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 	#infantry_weapons = 1
 	#gwtank = 1
 }
@@ -24,7 +24,7 @@ set_convoys = 5
 	complete_national_focus = construction_effort
 	complete_national_focus = production_effort
 	
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 		#tech_support = 1
 		#tech_recon = 1
 		#support_weapons = 1

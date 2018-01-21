@@ -5,11 +5,11 @@ sub_units = {
 		priority = 1198
 		active = yes
 		type = { infantry artillery }
-		need = { light_field_gun_equipment=36 }
+		need = { light_field_gun_equipment=12 }
 		categories = { category_army category_line_artillery category_artillery }
 		map_icon_category = infantry
 		group = infantry
-		combat_width = 3
+		combat_width = 0
 		training_time = 120
 		max_strength = 0.6
 		max_organisation = 0
@@ -49,10 +49,10 @@ sub_units = {
 			category_line_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 0
 
 		need = {
-			rocket_artillery_equipment = 36
+			rocket_artillery_equipment = 12
 		}
 		
 		manpower = 500
@@ -120,7 +120,7 @@ sub_units = {
 			category_line_artillery
 		}		
 
-		combat_width = 3
+		combat_width = 0
 
 		need = {
 			motorized_rocket_equipment = 20

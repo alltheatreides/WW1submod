@@ -9,17 +9,16 @@ division_template = {
 		infantry = { x = 1 y = 0 }
 		#infantry = { x = 1 y = 1 }
 	}
-	#support = {
-	#	engineer = { x = 0 y = 0 }
-	#	recon = { x = 0 y = 1 }
-	#}
+	support = {
+		DIV_HQ = { x = 0 y = 0 }
+	}
 }
 
 division_template = {
 	name = "Jandarma Alayı" #Gendarmerie Regiment
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
 	}
 	priority = 0
 }

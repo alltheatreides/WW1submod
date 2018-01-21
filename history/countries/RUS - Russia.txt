@@ -62,7 +62,7 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 	#complete_national_focus = RUS_ww1_diplomatic_effort
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -194,7 +194,7 @@ create_navy_leader={  name = "Aleksandr Rusin" id=77235 portrait_path="gfx/hoi4t
 	complete_national_focus = RUS_asian_focus
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

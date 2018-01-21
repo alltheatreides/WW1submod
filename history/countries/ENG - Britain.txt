@@ -125,7 +125,7 @@ create_navy_leader={  name = "Tyrwhitt" id=28485 portrait_path="gfx/admiral/ENG_
 	complete_national_focus = ENG_ww1_diplomatic_effort
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -263,7 +263,7 @@ create_navy_leader={  name = "Tyrwhitt" id=28485 portrait_path="gfx/admiral/ENG_
 	complete_national_focus = ENG_ww1_commonwealth_focus
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

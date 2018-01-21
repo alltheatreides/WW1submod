@@ -22,7 +22,7 @@ create_country_leader={ name = "Khedive Abbas Hilmi II" desc=EGY_AbbasII_DESC pi
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -103,7 +103,7 @@ create_country_leader={ name = "Khedive Abbas Hilmi II" desc=EGY_AbbasII_DESC pi
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

@@ -86,7 +86,7 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 	complete_national_focus = GER_ww1_diplomatic_effort
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -229,7 +229,7 @@ create_navy_leader={  name = "Max von Fischel" id=34314 portrait_path="gfx/admir
 	complete_national_focus = GER_ww1_anti_serb
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

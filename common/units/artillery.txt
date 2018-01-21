@@ -25,7 +25,7 @@ sub_units = {
 		combat_width = 0
 
 		need = {
-			artillery_equipment = 24
+			artillery_equipment = 12
 		}
 		manpower = 300
 		training_time = 120
@@ -34,7 +34,7 @@ sub_units = {
 		max_strength = 0.2
 		weight = 0.1
 		
-		supply_consumption = 0.16
+		supply_consumption = 0.05
 
 		# Support nerfs to combat abilities
 		defense = -0.5
@@ -51,7 +51,7 @@ sub_units = {
 		priority = 0
 		active = yes
 		type = { infantry support }
-		need = { light_field_gun_equipment=24 }
+		need = { light_field_gun_equipment=12 }
 		categories = { category_support_battalions category_army category_artillery }
 		map_icon_category = infantry
 		group = support
@@ -63,7 +63,7 @@ sub_units = {
 		default_morale = 0.1
 		manpower = 300
 		weight = 0.1
-		supply_consumption = 0.16
+		supply_consumption = 0.05
 		defense = -0.5
 		breakthrough = -0.5
 		soft_attack = -0.4

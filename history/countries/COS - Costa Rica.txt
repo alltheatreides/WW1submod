@@ -33,7 +33,7 @@ create_field_marshal={  name = "Tinoco F." id=18008 portrait_path="gfx/fieldmars
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -114,7 +114,7 @@ create_field_marshal={  name = "Tinoco F." id=18008 portrait_path="gfx/fieldmars
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

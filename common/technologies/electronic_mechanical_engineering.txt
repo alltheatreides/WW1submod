@@ -32,7 +32,11 @@ technologies = {
 	tank_unlocker2 = {
 
 		desc = "TANK_UNLOCKER_SPECIAL"
-
+		
+		allow = {
+			date > 1915.1.1
+		}
+		
 		on_research_complete = {
 			custom_effect_tooltip = TANK_UNLOCKER_RESEARCHED
 		}

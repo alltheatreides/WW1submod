@@ -33,7 +33,7 @@ create_field_marshal={  name = "Abdul Wakil Nuristani" id=1011 portrait_path="gf
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -81,7 +81,7 @@ create_field_marshal={  name = "Abdul Wakil Nuristani" id=1011 portrait_path="gf
 
 	add_ideas = {
 		ww1_Faith_Allah
-	}	
+	}
 }
 
 1914.1.1 = {
@@ -110,11 +110,11 @@ create_field_marshal={  name = "Abdul Wakil Nuristani" id=1011 portrait_path="gf
 	complete_national_focus = ww1_diplomatic_effort
 	complete_national_focus = neutrality_focus
 	complete_national_focus = ww1_military_reserve
-	
+
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

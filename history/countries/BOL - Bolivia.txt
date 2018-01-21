@@ -30,7 +30,7 @@ create_field_marshal={  name = "López" id=10002 portrait_path="gfx/fieldmarshal
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -117,7 +117,7 @@ create_field_marshal={  name = "López" id=10002 portrait_path="gfx/fieldmarshal
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

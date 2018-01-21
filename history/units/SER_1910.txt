@@ -9,7 +9,8 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 
@@ -31,7 +32,8 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 	support = {
-		engineer = { x = 0 y = 0 }
+		DIV_HQ = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
 	}
 }
 

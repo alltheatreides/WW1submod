@@ -44,7 +44,7 @@ NDiplomacy = {
 	BASE_BOOST_PARTY_POPULARITY_DAILY_PP = 5.0,	  	-- Daily pp cost for boost party popularity 						#HOI4TGW ::: BASE_BOOST_PARTY_POPULARITY_DAILY_PP = 0.25,
 	BASE_BOOST_PARTY_POPULARITY_DAILY_DRIFT = 0.1,	-- Daily amount of popularity that will be added by the activity. 	#HOI4TGW ::: BASE_BOOST_PARTY_POPULARITY_DAILY_DRIFT = 0.1,
 	BASE_STAGE_COUP_DAILY_PP = 5.0,					-- Daily pp cost for staging a coup 								#HOI4TGW ::: BASE_STAGE_COUP_DAILY_PP = 0.5,
-	BASE_STAGE_COUP_TOTAL_COST = 800, 				-- Equipment consume factor for stage coup. 						#HOI4TGW ::: BASE_STAGE_COUP_TOTAL_COST = 200,
+	BASE_STAGE_COUP_TOTAL_COST = 2000000, 				-- Equipment consume factor for stage coup. 						#HOI4TGW ::: BASE_STAGE_COUP_TOTAL_COST = 200,
 	NAP_EXPIRY_MONTHS = 48,                         -- NAPs expire after this many months 								#HOI4TGW ::: NAP_EXPIRY_MONTHS = 48,
 	NAP_UNBREAKABLE_MONTHS = 48,                    -- NAPS cannot be broken for this many months 						#HOI4TGW ::: NAP_UNBREAKABLE_MONTHS = 12,
 	NAP_FORCE_BALANCE_RULE_MONTHS = 6,        		-- The NAP border force balance rule changes with this interval
@@ -224,7 +224,7 @@ NCountry = {
 NProduction = {
 	MAX_EQUIPMENT_RESOURCES_NEED = 3, 	-- Max number of different strategic resources an equipment can be dependent on.
 	MAX_CIV_FACTORIES_PER_LINE = 15,	-- Max number of factories that can be assigned a single production line.
-	MAX_NAV_FACTORIES_PER_LINE = 15,
+	MAX_NAV_FACTORIES_PER_LINE = 5,
 	MAX_MIL_FACTORIES_PER_LINE = 15,
 	EFFICIENCY_LOSS_PER_UNUSED_DAY = 1,		-- Daily loss of efficiency for unused factory slots ( efficiency is tracked per factory slot in the production line )
 	MAX_LINE_RESOURCE_PENALTY = 90,		-- Max penalty factor for production lines lacking strategic resources in %.
@@ -242,7 +242,7 @@ NProduction = {
 	BASE_FACTORY_EFFICIENCY_ARCHETYPE_CHANGE_FACTOR = 20, 	-- Base factor for changing production with same archetype in %.
 	BASE_CONSUMER_GOODS_NEED_FACTOR = 50,  -- Base factor for the consumer goods need of civilian factories in %.
 	EQUIPMENT_BASE_LEND_LEASE_WEIGHT = 1.0, -- Base equipment lend lease weight
-	EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.01, -- Base equipment lend lease factor
+	EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.002, -- Base equipment lend lease factor
 	ANNEX_STOCKPILES_RATIO = 1.0,		-- How much stockpiled equipment will be transferred on annexation
 	ANNEX_FIELD_EQUIPMENT_RATIO = 0.25,	-- How much equipment from deployed divisions will be transferred on annexation
 	ANNEX_CONVOYS_RATIO = 0.15,			-- How many convoys will be transferred on annexation
@@ -269,7 +269,7 @@ NTechnology = {
 	BASE_YEAR_AHEAD_PENALTY_FACTOR = 2,		-- Base year ahead penalty
 	BASE_TECH_COST = 100,					-- Base cost for a tech. multiplied with tech cost and ahead of time penalties
 	MAX_TECH_SHARING_BONUS = 0.5, 			-- Max technology sharing bonus that can be applied instantly
-	LICENSE_PRODUCTION_TECH_BONUS = 0.2,	-- License production tech bonus
+	LICENSE_PRODUCTION_TECH_BONUS = 0.05,	-- License production tech bonus
 },
 
 NPolitics = {
@@ -336,11 +336,11 @@ NMilitary = {
 	FIELD_MARSHALL_CAP = 0,			-- how many a marshall is limited to. 0 = inf
 	UNIT_LEADER_GENERATION_CAPITAL_CONTINENT_FACTOR = 100, --Integer factor to multiply manpower.
 
-	RECON_SKILL_IMPACT = 5, -- how many skillpoints is a recon advantage worth when picking a tactic.
+	RECON_SKILL_IMPACT = 10, -- how many skillpoints is a recon advantage worth when picking a tactic.
 
-	MAX_DIVISION_BRIGADE_WIDTH = 5,			-- Max width of regiments in division designer.
+	MAX_DIVISION_BRIGADE_WIDTH = 4,			-- Max width of regiments in division designer.
 	MAX_DIVISION_BRIGADE_HEIGHT = 5,		-- Max height of regiments in division designer.
-	MAX_DIVISION_SUPPORT_WIDTH = 1,			-- Max width of support in division designer.
+	MAX_DIVISION_SUPPORT_WIDTH = 2,			-- Max width of support in division designer.
 	MAX_DIVISION_SUPPORT_HEIGHT = 5,		-- Max height of support in division designer.
 	
 	BASE_DIVISION_BRIGADE_GROUP_COST = 25, 	--Base cost to unlock a regiment slot,		#HOI4TGW ::: BASE_DIVISION_BRIGADE_GROUP_COST = 20,
@@ -351,17 +351,17 @@ NMilitary = {
 	MAX_NAVY_EXPERIENCE = 999,			--Max navy experience a country can store		#HOI4TGW ::: MAX_NAVY_EXPERIENCE = 500,
 	MAX_AIR_EXPERIENCE = 999,			--Max air experience a country can store		#HOI4TGW ::: MAX_AIR_EXPERIENCE = 500,
 	
-	COMBAT_MINIMUM_TIME = 4,			-- Shortest time possible for a combat in hours
+	COMBAT_MINIMUM_TIME = 6,			-- Shortest time possible for a combat in hours
 	SPOTTING_QUALITY_DROP_HOURS = 4, 	-- Each X hours the intel quality drops after unit was spotted.
 	LEADER_GROUP_MAX_SIZE = 1000, --5,			-- Max slots for leader groups.
 
 	LAND_COMBAT_ORG_DICE_SIZE = 4,                 -- nr of damage dice
-	LAND_COMBAT_STR_DICE_SIZE = 2,                 -- nr of damage dice
-	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.05,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+	LAND_COMBAT_STR_DICE_SIZE = 3,                 -- nr of damage dice
+	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.075,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 	LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.05,        -- global damage modifier
 	LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.04,    -- air global damage modifier
 	LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.04,    -- global damage modifier
-	LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 3, -- how many CAS/TAC can enter a combat depending on enemy width there
+	LAND_AIR_COMBAT_MAX_PLANES_PER_ENEMY_WIDTH = 2, -- how many CAS/TAC can enter a combat depending on enemy width there
 	LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2,   -- extra damage dice if our armor outclasses enemy
 	LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 6,   -- extra damage dice if our armor outclasses enemy
 	LAND_COMBAT_STR_ARMOR_DEFLECTION_FACTOR = 0.5, -- damage reduction if armor outclassing enemy
@@ -395,10 +395,10 @@ NMilitary = {
 	LEADER_SKILL_FACTOR = 0.05,                    -- bonus per skill level of leader
 	BASE_LEADER_TRAIT_GAIN_XP = 1,				   -- Base xp gain for traits per hour.
 	MAX_NUM_TRAITS = 6,					-- cant have more
-	ENEMY_AIR_SUPERIORITY_IMPACT = -0.5,           -- effect on defense due to enemy air superiorty
+	ENEMY_AIR_SUPERIORITY_IMPACT = -0.35,           -- effect on defense due to enemy air superiorty
 	ENEMY_AIR_SUPERIORITY_DEFENSE = 0.70,	       -- more AA attack will approach this amount of help (diminishing returns)
 	ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 112, -- how quickly defense approaches the max impact diminishing returns curve
-	ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.5,     -- effect on speed due to enemy air superiority
+	ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.25,     -- effect on speed due to enemy air superiority
 	ENCIRCLED_PENALTY = -0.3,                      -- penalty when completely encircled
 	WARSCORE_WINNER_FACTOR = 1,						-- Warscore effect on winners
 	WARSCORE_DEFENDER_FACTOR = 0.3,					-- Warscore effect on defender
@@ -406,7 +406,7 @@ NMilitary = {
 	WARSCORE_TOTAL_FACTOR = 3,						-- Warscore balancing value
 	WARSCORE_PROVINCE_FACTOR = 0.2,					-- Warscore effect from province
 	WARSCORE_MIN_HOURS = 48,						-- minimum hours
-	UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0001,
+	UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0002,
 	UNIT_EXPERIENCE_SCALE = 1.0,
 	UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015,
 	TRAINING_MAX_LEVEL = 2,
@@ -462,9 +462,9 @@ NMilitary = {
 	BORDER_WAR_ATTRITION_FACTOR = 0.1,			   -- How much of borderwar balance of power makes it into attrition
 	BORDER_WAR_VICTORY = 0.8,					   -- At wich border war balance of power is victory declared
 	REINFORCE_CHANCE = 0.02,                 	   -- base chance to join combat from back line when empty
-	SPEED_REINFORCEMENT_BONUS = 0.01,              -- chance to join combat bonus by each 100% larger than infantry base (up to 200%)
+	SPEED_REINFORCEMENT_BONUS = 0.1,              -- chance to join combat bonus by each 100% larger than infantry base (up to 200%)
 	OVERSEAS_LOSE_EQUIPMENT_FACTOR = 0.75,		   -- percentage of equipment lost disbanded overseas
-	ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0.2,       -- percentage of manpower returned when an encircled unit is disbanded
+	ENCIRCLED_DISBAND_MANPOWER_FACTOR = 0,       -- percentage of manpower returned when an encircled unit is disbanded
 	ORG_LOSS_FACTOR_ON_CONQUER = 0.2,              -- percentage of (max) org loss on takign enemy province
 	LOW_ORG_FOR_ATTACK = 0.5,                      -- at what org % we start affecting speed when doign hostile moves. scales down ZERO_ORG_MOVEMENT_MODIFIER
 
@@ -537,7 +537,7 @@ NMilitary = {
 	COMBAT_OVER_WIDTH_PENALTY_MAX = -0.33,			-- over combat width max (when you cant join no more).
 	RETREAT_SPEED_FACTOR = 0.25,                    -- speed bonus when retreating
 	STRATEGIC_SPEED_BASE = 10.0,                 	-- Speed of strategic redeployment
-	STRATEGIC_INFRA_SPEED = 10.0,                   -- Max of additional speed gained trouh=gh level for strategic redeployment per infra
+	STRATEGIC_INFRA_SPEED = 5.0,                   -- Max of additional speed gained trouh=gh level for strategic redeployment per infra
 	STRATEGIC_REDEPLOY_ORG_RATIO = 0.1,				-- Ratio of max org while strategic redeployment
 	BATALION_NOT_CHANGED_EXPERIENCE_DROP = 0.0,		-- Division experience drop if unit has same batalion
 	BATALION_CHANGED_EXPERIENCE_DROP = 0.5,			-- Division experience drop if unit has different batalion
@@ -592,7 +592,7 @@ NAir = {
 	AIR_REGION_SUPERIORITY_PIXEL_SCALE = 0.04,           -- air superiority scale = superiority/(pixels*this)
 	COMBAT_SUP_VS_SUP_ATTACK_CHANCE_SPEED_DIFF = 0.25, 	-- How much diff in speed between aircrafts affects the chance of who attacks first in superiority vs superiority.( Naval air combat only )
 	COMBAT_MULTIPLANE_CAP = 3.0,						-- How many planes can shoot at each plane on other side ( if there are 100 planes we are atttacking COMBAT_MULTIPLANE_CAP * 100 of our planes can shoot )
-	COMBAT_DAMAGE_SCALE = 0.1,							-- Higher value = more shot down planes
+	COMBAT_DAMAGE_SCALE = 0.2,							-- Higher value = more shot down planes
 	DETECT_CHANCE_FROM_OCCUPATION = 0.10, 				-- How much the controlled provinces in area affects the air detection base value.
 	DETECT_CHANCE_FROM_RADARS = 0.5, 					-- How much the radars in area affects detection chance.
 	DETECT_CHANCE_FROM_AIRCRAFTS_EFFECTIVE_COUNT = 3000, -- Max amount of aircrafts in region to give full detection bonus.
@@ -613,7 +613,7 @@ NAir = {
 	CLOSE_AIR_SUPPORT_EXPERIENCE_SCALE = 0.0005,			-- How much the experinence gained by CAS is scaled
 	PARADROP_EXPERIENCE_SCALE = 0.03,					-- How much the experinence gained by paradropping is scaled
 	BOMBING_DAMAGE_EXPERIENCE_SCALE = 0.0002,           -- How much the experinence gained by bombing is scaled
-	ACCIDENT_CHANCE_BASE = 0.05,							-- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
+	ACCIDENT_CHANCE_BASE = 0.075,							-- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
 	ACCIDENT_CHANCE_CARRIER_MULT = 2.0,					-- The total accident chance is scaled up when it happens on the carrier ship.
 	ACCIDENT_CHANCE_BALANCE_MULT = 0.5,					-- Multiplier for balancing how often the air accident really happens. The higher mult, the more often.
 	ACCIDENT_EFFECT_MULT = 0.005,						-- Multiplier for balancing the effect of accidents
@@ -781,7 +781,7 @@ NNavy = {
 	BATTLE_ARRIVAL_SPEED_BONUS_ON_ENEMY_WITH_NO_MISSION = 4.0,		-- Idle fleet with no pending mission has a bit of advantage over spreaded ones. To balance it, increase the speed for ships that are on it's way to arrive on the battle. Value is a speed MULTIPLIER.
 	CARRIER_STACK_PENALTY = 4,										-- The most efficient is 4 carriers in combat. 5+ brings the penalty to the amount of wings in battle.
 	CARRIER_STACK_PENALTY_EFFECT = 0.2,								-- Each carrier above the optimal amount decreases the amount of airplanes being able to takeoff by such %.
-	SUBMARINE_HIDE_TIMEOUT = 16,										-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
+	SUBMARINE_HIDE_TIMEOUT = 6,										-- Amount of in-game-hours that takes the submarine (with position unrevealed), to hide.
 	SUBMARINE_REVEALED_TIMEOUT = 12,								-- Amount of in-game-hours that makes the submarine visible if it is on the defender side.
 	SUBMARINE_REVEAL_BASE_CHANCE = 0.05,							-- Base chance for submarine detection. It's modified by the difference of a spootter's submarines detection vs submarine visibility. Use this variable for game balancing.
 	SHORE_BOMBARDMENT_CAP = 0.25,
@@ -792,7 +792,7 @@ NNavy = {
 	MIN_TRACTED_ASSIST_DAMAGE_RATIO = 0.05,							-- How much damage counts as assist damage
 	SUPPLY_NEED_FACTOR = 4,										    -- multiplies supply usage
 	SEA_AIR_COMBAT_MAX_WINGS_ON_STACK = 200,                        -- how many attacker planes can enter naval comabt per wave
-	ENEMY_AIR_SUPERIORITY_IMPACT = -1,           					-- effect on ship efficiency due to enemy air superiorty
+	ENEMY_AIR_SUPERIORITY_IMPACT = -0.5,           					-- effect on ship efficiency due to enemy air superiorty
 	DECRYPTION_SPOTTING_BONUS = 0.2,
 	DISBAND_MANPOWER_LOSS = 0.0,
 	},

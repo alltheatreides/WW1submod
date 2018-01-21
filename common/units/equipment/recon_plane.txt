@@ -25,7 +25,7 @@ equipments = {
 		reliability = 0.8
 		
 		# Air vs Ground
-		air_ground_attack = 1.0
+		air_ground_attack = 0.1
 
 		# Air vs Navy - medium damage / high hit chance / medium to hurt
 		naval_strike_attack = 1.0

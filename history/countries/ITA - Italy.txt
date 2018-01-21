@@ -43,7 +43,7 @@ create_navy_leader={  name = "Thaon di Revel" id=46075 portrait_path="gfx/hoi4tg
 	complete_national_focus = ITA_ww1_diplomatic_effort
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -167,7 +167,7 @@ create_navy_leader={  name = "Thaon di Revel" id=46075 portrait_path="gfx/hoi4tg
 	unlock_national_focus = ITA_ww1_libyan_claims
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

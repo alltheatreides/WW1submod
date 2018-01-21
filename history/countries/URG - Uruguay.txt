@@ -40,7 +40,7 @@ create_navy_leader={  name = "Ravia" id=92018 portrait_path="gfx/admiral/URG_rav
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -123,7 +123,7 @@ create_navy_leader={  name = "Ravia" id=92018 portrait_path="gfx/admiral/URG_rav
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1

@@ -11,9 +11,10 @@ division_template = {
 		infantry = { x = 2 y = 0 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		artillery = { x = 0 y = 2 }
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
 	}
 }
 
@@ -28,11 +29,12 @@ division_template = {
 		infantry = { x = 2 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
-		logistics_company = { x = 0 y = 2 }
-		field_hospital = { x = 0 y = 3 }
-		artillery = { x = 0 y = 4 }
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
+		artillery = { x = 1 y = 0 }
 	}
 	priority = 2
 }
@@ -46,18 +48,19 @@ division_template = {
 		infantry = { x = 1 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }		
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }		
 	}
 }
 
 division_template = {
 	name = "Reserve Brigade"	# Militia
 	regiments = {
-		infantry = { x = 0 y = 0 }
-		infantry = { x = 0 y = 1 }
-		infantry = { x = 1 y = 0 }
-		infantry = { x = 1 y = 1 }
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
 	}
 	priority = 0
 }
@@ -71,8 +74,9 @@ division_template = {
 		cavalry = { x = 1 y = 1 }
 	}
 	support = {
-		recon = { x = 0 y = 0 }
-		engineer = { x = 0 y = 1 }
+		DIV_HQ = { x = 0 y = 0 }
+		recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
 	}
 }
 
@@ -995,6 +999,7 @@ air_wings = {
 
 instant_effect = {
 	add_equipment_production = { equipment = { type = infantry_equipment_0 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
+	add_equipment_production = { equipment = { type = heavy_infantry_equipment_0 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	add_equipment_production = { equipment = { type = support_equipment_1 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	add_equipment_production = { equipment = { type = light_field_gun_equipment_1 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}
 	add_equipment_production = { equipment = { type = motorized_equipment_0 creator = "ENG" } requested_factories = 1 progress = 0.1 efficiency = 50}

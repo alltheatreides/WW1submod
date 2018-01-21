@@ -25,7 +25,7 @@ create_country_leader={ name = "Ramón Cáceres" desc=DOM_ramon_caceres_DESC pic
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
@@ -106,7 +106,7 @@ create_country_leader={ name = "Ramón Cáceres" desc=DOM_ramon_caceres_DESC pic
 
 	#-------------------------------------------------------
 
-	set_technology = {
+	set_technology = { ww1_infantry = 1 ww1_artillery = 1 mobile_doctrines = 1 ww1_battlefield_support = 1
 
 		# Infantry
 		infantry_weapons = 1
