@@ -2,7 +2,7 @@
 ###################################################################
 
 division_template = {
-	name = "Landwehr Division"	# Infantry
+	name = "Infanterie Division"	# Infantry
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -56,7 +56,7 @@ division_template = {
 }
 
 division_template = {
-	name = "Gebirgsjäger Division"		# Mountain Division
+	name = "Kaiserjäger Division"		# Mountain Division
 	regiments = {
 		mountaineers = { x = 0 y = 0 }
 		mountaineers = { x = 0 y = 1 }
@@ -82,12 +82,14 @@ division_template = {
 }
 
 division_template = {
-	name = "Hussars"		# Cavalry
+	name = "Kavallerie  Division"		# Cavalry
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 0 y = 2 }
 		cavalry = { x = 1 y = 0 }
 		cavalry = { x = 1 y = 1 }
+		cavalry = { x = 1 y = 2 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -111,6 +113,17 @@ division_template = {
         engineer = { x = 0 y = 1 }
     }
 }
+
+division_template = {
+	name = "Landsturm Division"	# Militia
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
 ###################################################################
 
 
@@ -118,501 +131,355 @@ division_template = {
 units = {
 
 division= { 
-name = "105. LstrInfanteriebrigaden"
-location = 9630 # Lienz
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "1. k.u.k. Tirolerjäger"
+location = 656
+division_template="Kaiserjäger Division"
+start_experience_factor=0.8
 }
 
 division= { 
-name = "103. LstrInfanteriebrigaden"
-location = 6626 # Trieste
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "2. k.u.k. Tirolerjäger"
+location = 656
+division_template="Kaiserjäger Division"
+start_experience_factor=0.8
 }
 
 division= { 
-name = "102. LstrInfanteriebrigaden"
-location = 11581 # Zagreb
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "3. k.u.k. Tirolerjäger"
+location = 673
+division_template="Kaiserjäger Division"
+start_experience_factor=0.8
 }
 
 division= { 
-name = "7. Kavalleriedivision"
-location = 11542 # Praha
-division_template="Hussars"
-start_experience_factor=0.1
+name = "4. k.u.k. Tirolerjäger"
+location = 673
+division_template="Kaiserjäger Division"
+start_experience_factor=0.8
 }
 
 division= { 
-name = "95. Landsturminfanteriedivision"
-location = 11542 # Praha
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "5. k.u. Honvéd Kavallerie  Division"
+location = 9660
+division_template="Kavallerie  Division"
+start_experience_factor=0.6
 }
 
 division= { 
-name = "106. Landsturminfanteriedivision"
-location = 11542 # Praha
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "5. Infanterie Division"
+location = 9427
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "9. Infanteriedivision"
-location = 11608 # Caransebes
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "6. Infanterie Division"
+location = 9648
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "21. Landwehrinfanteriedivision"
-location = 11608 # Caransebes
-division_template="Landwehr Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "7. Infanterie Division"
+location = 9619
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "36. Infanteriedivision"
-location = 3617 # Kikinda
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "8. Infanterie Division"
+location = 679
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "42. Honvedinfanteriedivision"
-location = 3617 # Kikinda
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "9. Infanterie Division"
+location = 6604
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "13. Infanteriebrigaden"
-location = 3617 # Kikinda
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "10. Infanterie Division"
+location = 9706
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "104. Landstrurmbrigaden"
-location = 646 # Timisoara
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "11. k.u. Honvéd Kavallerie  Division"
+location = 730
+division_template="Kavallerie  Division"
+start_experience_factor=0.5
 }
 
 division= { 
-name = "1. Infanteriedivision"
-location = 6889 # Dubrovnik
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "12. Infanterie Division"
+location = 6709
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "48. Infanteriedivision"
-location = 6889 # Dubrovnik
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "13. Landwehr Infanterietruppen Division"
+location = 11666
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "18. Infanteriedivision"
-location = 6799 # Tuzla
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "14. Infanterie Division"
+location = 466
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "1. Gebirgsbrigaden"
-location = 6799 # Tuzla
-division_template="Gebirgsjäger Division"
-start_experience_factor=0.1
+name = "15. Infanterie Division"
+location = 699
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "2. Gebirgsbrigaden"
-location = 6799 # Tuzla
-division_template="Gebirgsjäger Division"
-start_experience_factor=0.1
+name = "16. Infanterie Division"
+location = 9660
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "13. Gebirgsbrigaden"
-location = 6799 # Tuzla
-division_template="Gebirgsjäger Division"
-start_experience_factor=0.1
+name = "17. Infanterie Division"
+location = 9427
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "40. Honvedinfanteriedivision"
-location = 6799 # Tuzla
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "18. Infanterie Division"
+location = 11901
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "47. Infanterie Division"
-location = 11899 # Sarajevo
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "19. Infanterie Division"
+location = 445
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "109.Landsturmbrigaden"
-location = 3924 # Split
-division_template="Ersatz Division"
-start_experience_factor=0.05
+name = "20. k.u. Honvéd Infanterie Division"
+location = 9660
+division_template="Infanterie Division"
+start_experience_factor=0.5
 }
 
 division= { 
-name = "5. Infanteriedivision"
-location = 9427 # Kraków
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "21. Landwehr Infanterietruppen Division"
+location = 11556
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "46. Landwehrinfanteriedivision"
-location = 9427 # Kraków
-division_template="Landwehr Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "22. Landwehr Infanterietruppen Division"
+location = 653
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "14. Infanteriedivision"
-location = 11479 # Lwów
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "23. Landwehr Infanterietruppen Division"
+location = 9596
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "33. Infanteriedivision"
-location = 11479 # Lwów
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "24. Infanterie Division"
+location = 536
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "37. Honvedinfanteriedivision"
-location = 11479 # Lwów
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "25. Infanterie Division"
+location = 3700
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "2. Infanteriedivision"
-location = 6522 # Przemysl
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "26. Landwehr Infanterietruppen Division"
+location = 11432
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "24. Infanteriedivision"
-location = 6522 # Przemysl
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "27. Infanterie Division"
+location = 9427
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "45. Landwehrinfanteriedivision"
-location = 6522 # Przemysl
-division_template="Landwehr Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "28. Infanterie Division"
+location = 9427
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "12. Infanteriedivision"
-location = 9427 # Kraków
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "29. Infanterie Division"
+location = 11413
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "3. Kavalleriedivision"
-location = 9427 # Kraków
-division_template="Hussars"
-start_experience_factor=0.1
+name = "30. Infanterie Division"
+location = 688
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "9. Kavalleriedivision"
-location = 9427 # Kraków
-division_template="Hussars"
-start_experience_factor=0.1
+name = "31. Infanterie Division"
+location = 9427
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "1. LstrInfanteriebrigaden"
-location = 9427 # Kraków
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "32. Infanterie Division"
+location = 9660
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "101. Landsturminfanterie"
-location = 6522 # Przemysl
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "33. Infanterie Division"
+location = 9660
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "16. Infanteriedivision"
-location = 9660 # Budapest
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "34. Infanterie Division"
+location = 466
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "35. Infanteriedivision"
-location = 9660 # Budapest
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "35. Infanterie Division"
+location = 6460
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "38. Honvedinfanteriedivision"
-location = 9660 # Budapest
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "36. Bosnisch-Hercegowinische Infanterie Division"
+location = 3601
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "6. Infanteriedivision"
-location = 9660 # Budapest
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "37. Infanterie Division"
+location = 6626
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "22. Landwehrinfanteriedivision"
-location = 9660 # Budapest
-division_template="Landwehr Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "38. Bosnisch-Hercegowinische Infanterie Division"
+location = 3924
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "28. Infanteriedivision"
-location = 9660 # Budapest
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "39. Bosnisch-Hercegowinische Infanterie Division"
+location = 11577
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "20. Honvedinfanteriedivision"
-location = 9660 # Budapest
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "41. k.u. Honvéd Infanterie Division"
+location = 3709
+division_template="Infanterie Division"
+start_experience_factor=0.5
 }
 
 division= { 
-name = "35. LstrInfanteriedivision"
-location = 9598 # Trento
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "46. Landwehr Infanterietruppen Division"
+location = 9427
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "5. Honvedkavalleriedivision"
-location = 9660 # Budapest
-division_template="Hussars"
-start_experience_factor=0.1
+name = "45. Landwehr Infanterietruppen Division"
+location = 491
+division_template="Infanterie Division"
+start_experience_factor=0.3
+start_equipment_factor = 0.7
 }
 
 division= { 
-name = "8. Kavalleriedivision"
-location = 9660 # Budapest
-division_template="Hussars"
-start_experience_factor=0.1
+name = "44. Landwehr Infanterietruppen Division"
+location = 11634
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "30. Infanteriedivision"
-location = 3673 # Villach
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "43. Landwehr Infanterietruppen Division"
+location = 438
+division_template="Infanterie Division"
+start_experience_factor=0.3
 }
 
 division= { 
-name = "23. Honvedinfanteriedivision"
-location = 688 # Linz
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "42. Infanterie Division"
+location = 686
+division_template="Infanterie Division"
+start_experience_factor=0.4
 }
 
 division= { 
-name = "41. Honvedinfanteriedivision"
-location = 688 # Linz
-division_template="Landwehr Division"
-start_experience_factor=0.1
+name = "1. Dragonerregiment Kaiser Franz"
+location = 9665
+division_template="Kavallerie  Division"
+start_experience_factor=0.7
 }
 
 division= { 
-name = "2. Kavalleriedivision"
-location = 688 # Linz
-division_template="Hussars"
-start_experience_factor=0.1
+name = "2. Dragonerregiment Graf Paar"
+location = 491
+division_template="Kavallerie  Division"
+start_experience_factor=0.7
 }
 
 division= { 
-name = "4. Kavalleriedivision"
-location = 688 # Linz
-division_template="Hussars"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "11.Honved Kavallerie-Division"
-location = 688 # Linz
-division_template="Hussars"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "3. Infanteriedivision"
-location = 673 # Innsbruck
-division_template="Landwehr Division"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "8. Infanteriedivision"
-location = 673 # Innsbruck
-division_template="Ersatz Division"
-start_experience_factor=0.2
-}
-
-division= { 
-name = "44. Landwehrinfanteriedivision"
-location = 673 # Innsbruck
-division_template="Landwehr Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
-}
-
-division= { 
-name = "97. LstrInfanteriebrigaden"
-location = 11666 # Wien
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
+name = "3. Dragonerregiment Friedrich August König von Sachsen"
+location = 11666
+division_template="Kavallerie  Division"
+start_experience_factor=0.7
 }
 
 division= {
-name = "108. LstrInfanteriebrigaden"
-location = 673 # Innsbruck
-division_template="Ersatz Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
-}
-
-division= { 
-name = "4. Infanteriedivision"
-location = 6711 # Cluj
-division_template="Landwehr Division"
+name = "K.u.k. Landsturm"
+location = 11666
+division_template="Landsturm Division"
 start_experience_factor=0.1
-}
-
-division= { 
-name = "13. Landwehrinfanteriedivision"
-location = 6711 # Cluj
-division_template="Landwehr Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
-}
-
-division= { 
-name = "25. Infanteriedivision"
-location = 6711 # Cluj
-division_template="Landwehr Division"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "15. Infanteriedivision"
-location = 3743 # Sighetu Marmatiei
-division_template="Landwehr Division"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "27. Infanteriedivision"
-location = 3743 # Sighetu Marmatiei
-division_template="Landwehr Division"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "39. Honvedinfanteriedivision"
-location = 3743 # Sighetu Marmatiei
-division_template="Landwehr Division"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "10. Infanteriedivision"
-location = 9670 # Gheorgheni
-division_template="Landwehr Division"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "26. Landwehrinfanteriedivision"
-location = 9670 # Gheorgheni
-division_template="Landwehr Division"
-start_experience_factor=0.05
-# start_equipment_factor = 0.3 
-# start_manpower_factor = 0.3
-}
-
-division= { 
-name = "19. Infanteriedivision"
-location = 6711 # Cluj
-division_template="Landwehr Division"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "6. Kavalleriedivision"
-location = 6711 # Cluj
-division_template="Hussars"
-start_experience_factor=0.1
-}
-
-division= { 
-name = "10. Kavalleriedivision"
-location = 6711 # Cluj
-division_template="Hussars"
-start_experience_factor=0.1
+start_equipment_factor = 0.3
 }
 
 ############################################################################################

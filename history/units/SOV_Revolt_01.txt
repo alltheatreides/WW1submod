@@ -39,6 +39,7 @@
 		support_weapons=1				#1900 Early Support Weapons I
 		support_weapons2=1				#1914 Early Support Weapons II
 		ww1_ambulance1=1				#1900 Horse-drawn Ambulance
+		
 
 		#Armor
 		#--------------------------------------------------------------
@@ -46,18 +47,55 @@
 
 		#Land Doctrines
 		#--------------------------------------------------------------
-		ww1_landdoctrine=1				#Mass Charge
-		ww1_directfire=1				#Entrenching Battalions
+		ww1_landdoctrine=1		#1917 Doctrine for revolutionary division
+		ww1_directfire=1
+		ww1_rifle_ammo=1
+		ww1_long_march=1
+		#-------------------------1917----------------------------------
+		ww1infantry_weapons2=1			#1917 Weapons II
+		infantry_gasmask=1
+		infantry_ww1_machinegun1=1
+		infantry_folder=1
+		marines=1						#1917 Petrograd #matros
+		marines2=1
+		early_motorised=1				#1917 Transoprt
+		ww1_ambulance2=1
+		tech_engineers=1
+		tech_recon=1
+		tech_military_police=1
+		tech_field_hospital=1
+		ww1_camera1=1					#1917 workers-bolsheviks
+		ww1_medicine1=1
+		ww1_medicine2=1
+		ww1_tools1=1
+		ww1_tools2=1
+		ww1_construction1=1
+		ww1_mining1=1
+		tech_mountaineers=1
 
 	}
 
-	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "SOV" } requested_factories = 1 progress = 0.99 efficiency = 90}
+	add_equipment_production = { equipment = { type = infantry_equipment_1 creator = "SOV" } requested_factories = 10 progress = 0.80 efficiency = 90}
 
 }
 
 
 division_template = {
-	name = "Infantry Division"
+	name = "Krasnaya Brigada"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	support = {
+	}
+	#priority = 2
+}
+division_template = {
+	name = "Krasnogvardeyskiy Polk"
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -66,19 +104,19 @@ division_template = {
 	}
 	support = {
 	}
-	#priority = 2
+	priority = 0
 }
 division_template = {
-	name = "Bolsheviks Partisan"
+	name = "Partizanskiy Polk"
 	regiments = {
-		infantry = { x = 0 y = 0 }
+		mountaineers = { x = 0 y = 0 }
 		}
 	support = {
 	}
 	priority = 0
 }
 division_template = {
-	name = "Cavalry Division"
+	name = "Kavaleriyskaya Brigada"
 	regiments = {
 		cavalry = { x = 0 y = 0 }
 		cavalry = { x = 0 y = 1 }
@@ -92,206 +130,224 @@ division_template = {
 units = {
 	# Spawn around the Saint Petersburg State
 	division = {
-		name = "1. Bolsheviks Cavalry Division"
+		name = "1-ya Konnaya Brigada"
 		location = 6174
-		division_template="Cavalry Division"
+		division_template="Kavaleriyskaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "1. Bolsheviks Infantry Division"
+		name = "1-ya Krasnogvardeyskaya Brigada"
 		location = 6174
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "2. Bolsheviks Infantry Division"
+		name = "2-ya Petrogradskaya Brigada matrosov"
 		location = 79
-		division_template="Infantry Division"
-		start_experience_factor=0.8
+		division_template="Krasnaya Brigada"
+		start_experience_factor=1
 	}
 	division = {
-		name = "3. Bolsheviks Infantry Division"
+		name = "3-ya Krasnogvardeyskaya Brigada"
 		location = 11068
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "4. Bolsheviks Infantry Division"
+		name = "4-ya Krasnogvardeyskaya Brigada"
 		location = 149
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "5. Bolsheviks Infantry Division"
+		name = "5-ya Krasnogvardeyskaya Brigada"
 		location = 3060
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "6. Bolsheviks Infantry Division"
+		name = "6-ya Krasnogvardeyskaya Brigada"
 		location = 149
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "7. Bolsheviks Infantry Division"
+		name = "7-ya Krasnogvardeyskaya Brigada"
 		location = 9150
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "8. Bolsheviks Infantry Division"
+		name = "8-ya Krasnogvardeyskaya Brigada"
 		location = 149
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 
 	# Spawn around the Moscow State
 	division = {
-		name = "9. Bolsheviks Division"
+		name = "9-ya Moskovskaya Brigada"
 		location = 6414
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "10. Bolsheviks Cavalry Division"
+		name = "2-ya Konnaya Brigada"
 		location = 6414
-		division_template="Cavalry Division"
+		division_template="Kavaleriyskaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "11. Bolsheviks Division"
+		name = "10-ya Krasnogvardeyskaya Brigada"
 		location = 11282
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "12. Bolsheviks Division"
+		name = "11-ya Krasnogvardeyskaya Brigada"
+		location = 11282
+		division_template="Krasnaya Brigada"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "12-ya Krasnogvardeyskaya Brigada"
 		location = 301
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "13. Bolsheviks Division"
+		name = "13-ya Krasnogvardeyskaya Brigada"
 		location = 9378
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "14. Bolsheviks Division"
+		name = "14-ya Krasnogvardeyskaya Brigada"
 		location = 3259
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "15. Bolsheviks Division"
+		name = "15-ya Krasnogvardeyskaya Brigada"
 		location = 401
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "16. Bolsheviks Division"
+		name = "16-ya Krasnogvardeyskaya Brigada"
 		location = 652
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "17. Bolsheviks Division"
+		name = "17-ya Krasnogvardeyskaya Brigada"
 		location = 11330
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "18. Bolsheviks Division"
+		name = "18-ya Krasnogvardeyskaya Brigada"
 		location = 9302
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "19. Bolsheviks Division"
+		name = "19-ya Krasnogvardeyskaya Brigada"
 		location = 11236
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "20. Bolsheviks Petrograd Infantry Division"
+		name = "20-ya Krasnogvardeyskaya Brigada"
 		location = 149
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "21. Bolsheviks Petrograd Infantry Division"
+		name = "21-ya Krasnogvardeyskaya Brigada"
 		location = 121
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "22. Bolsheviks Petrograd Infantry Division"
+		name = "22-ya Krasnogvardeyskaya Brigada"
 		location = 6101
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "23. Bolsheviks Petrograd Infantry Division"
+		name = "23-ya Krasnogvardeyskaya Brigada"
 		location = 6143
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "24. Bolsheviks Petrograd Infantry Division"
+		name = "24-ya Krasnogvardeyskaya Brigada"
 		location = 6131
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "25. Bolsheviks Petrograd Infantry Division"
+		name = "25-ya Petrogradskaya Brigada"
 		location = 9060
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "26. Bolsheviks Petrograd Infantry Division"
+		name = "26-ya Petrogradskaya Brigada"
 		location = 6400
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "27. Bolsheviks Petrograd Infantry Division"
+		name = "27-ya Petrogradskaya Brigada"
 		location = 6086
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "28. Bolsheviks Petrograd Infantry Division"
+		name = "28-ya Petrogradskaya Brigada"
 		location = 9188
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "29. Bolsheviks Petrograd Infantry Division"
+		name = "29-ya Petrogradskaya Brigada"
 		location = 11099
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "30. Bolsheviks Petrograd Infantry Division"
+		name = "30-ya Petrogradskaya Brigada"
 		location = 150
-		division_template="Infantry Division"
+		division_template="Krasnaya Brigada"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "31-ya Petrogradskaya Brigada"
+		location = 9188
+		division_template="Krasnaya Brigada"
+		start_experience_factor=0.8
+	}
+	division = {
+		name = "32-ya Petrogradskaya Brigada"
+		location = 9188
+		division_template="Krasnaya Brigada"
 		start_experience_factor=0.8
 	}
 
 
 	
 	division = {
-		name = "1. Bolsheviks Tangarov Division"
+		name = "Taganrogskiy Polk"
 		location = 3479
-		division_template="Bolsheviks Partisan"
+		division_template="Partizanskiy Polk"
 		start_experience_factor=0.8
 	}
 	division = {
-		name = "2. Bolsheviks Rostov Division"
+		name = "Rostovskiy Polk"
 		location = 585
-		division_template="Bolsheviks Partisan"
+		division_template="Partizanskiy Polk"
 		start_experience_factor=0.8
 	}
 

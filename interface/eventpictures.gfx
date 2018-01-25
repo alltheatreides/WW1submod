@@ -1542,6 +1542,36 @@ spriteType = {  name = "ww1_whiterussia_19"  texturefile = "gfx/events/ww1_white
 spriteType = {  name = "ww1_whiterussia_20"  texturefile = "gfx/events/ww1_whiterussia/ww1_whiterussia_20.dds" }
 
 
-
-
+spriteType = {
+		name = "report_tsar_tryapka"
+		texturefile = "gfx/event_pictures/report_tsar_tryapka.dds"
+	}
+spriteType = {
+		name = "event_february_revolution"
+		texturefile = "gfx/event_pictures/event_february_revolution.dds"
+	}
+spriteType = {
+		name = "event_kornilov"
+		texturefile = "gfx/event_pictures/event_kornilov.dds"
+	}
+spriteType = {
+		name = "event_october_revolution"
+		texturefile = "gfx/event_pictures/event_october_revolution.dds"
+	}
+spriteType = {
+		name = "report_lvov_minister"
+		texturefile = "gfx/event_pictures/report_lvov_minister.dds"
+	}
+spriteType = {
+		name = "report_kornilov"
+		texturefile = "gfx/event_pictures/report_kornilov.dds"
+	}
+spriteType = {
+		name = "report_kerenskiy"
+		texturefile = "gfx/event_pictures/report_kerenskiy.dds"
+	}
+spriteType = {
+		name = "report_october_revolution"
+		texturefile = "gfx/event_pictures/report_october_revolution.dds"
+	}
 }
