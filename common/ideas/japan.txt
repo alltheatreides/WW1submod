@@ -36,12 +36,12 @@ ideas={
 			JAP_tokugawa_yoshitoshi={ allowed={ tag=JAP } traits={ air_close_air_support_1 } ai_will_do={ factor=1 } }
 			#JAP_inoue_jinro={ allowed={ tag=JAP } traits={ air_air_superiority_1 } ai_will_do={ factor=1 } }
 			JAP_yamamoto_eisuke={ allowed={ tag=JAP } traits={ air_naval_strike_1 } ai_will_do={ factor=1 } }
-			JAP_hasegawa_yoshimichi={ allowed={ tag=JAP } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			# JAP_hasegawa_yoshimichi={ allowed={ tag=JAP } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			JAP_oka_ichinosuke={ allowed={ tag=JAP } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			JAP_oku_yasukata={ allowed={ tag=JAP } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			JAP_oshima_kenichi={ allowed={ tag=JAP } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
-			JAP_kaninnomiya_kotohito={ allowed={ tag=JAP } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
-			JAP_takashima_tomonosuke={ allowed={ tag=JAP } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			# JAP_kaninnomiya_kotohito={ allowed={ tag=JAP } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
+			# JAP_takashima_tomonosuke={ allowed={ tag=JAP } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			JAP_tanaka_giichi={ allowed={ tag=JAP } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
 			JAP_terauchi_masatake={ allowed={ tag=JAP } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			JAP_uehara_yosaku={ allowed={ tag=JAP } traits={ army_commando_1 } ai_will_do={ factor=1 } }

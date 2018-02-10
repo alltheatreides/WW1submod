@@ -28,7 +28,7 @@ ideas={
 			#BEL_baron_mathieu={ allowed={ tag=BEL } traits={ air_air_superiority_1 } ai_will_do={ factor=1 } }
 			BEL_baron_wahis={ allowed={ tag=BEL } traits={ air_close_air_support_1 } ai_will_do={ factor=1 } }
 			BEL_felix_wielemans={ allowed={ tag=BEL } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
-			BEL_henry_h_maglinse={ allowed={ tag=BEL } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			BEL_henry_h_maglinse={ allowed={ tag=BEL } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			}
 	naval_manufacturer={
 			designer = yes 

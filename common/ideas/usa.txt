@@ -19,7 +19,7 @@ ideas={
 			USA_adna_r_chaffee={ allowed={ tag=USA } traits={ military_theorist } ai_will_do={ factor=1 } }
 			}
 	army_chief={
-			USA_peyton_c_march={ allowed={ tag=USA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			USA_peyton_c_march={ allowed={ tag=USA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			USA_john_j_pershing={ allowed={ tag=USA } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
 			}
 
@@ -38,13 +38,13 @@ ideas={
 			USA_benjamin_foulois={ allowed={ tag=USA } traits={ air_tactical_bombing_1 } ai_will_do={ factor=1 } }
 			USA_mason_patrick={ allowed={ tag=USA } traits={ air_bomber_interception_1 } ai_will_do={ factor=1 } }
 			USA_charles_menoher={ allowed={ tag=USA } traits={ air_close_air_support_1 } ai_will_do={ factor=1 } }
-			USA_samuel_young={ allowed={ tag=USA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
-			USA_john_c_bates={ allowed={ tag=USA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
-			USA_j_franklin_bell={ allowed={ tag=USA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			USA_samuel_young={ allowed={ tag=USA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
+			USA_john_c_bates={ allowed={ tag=USA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
+			USA_j_franklin_bell={ allowed={ tag=USA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			USA_william_w_wotherspoon={ allowed={ tag=USA } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
-			USA_hugh_l_scott={ allowed={ tag=USA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			USA_hugh_l_scott={ allowed={ tag=USA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			USA_tasker_h_bliss={ allowed={ tag=USA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
-			USA_nelson_a_miles={ allowed={ tag=USA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			USA_nelson_a_miles={ allowed={ tag=USA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			USA_william_s_benson={ allowed={ tag=USA } traits={ navy_capital_ship_1 } ai_will_do={ factor=1 } }
 			}
 	naval_manufacturer={

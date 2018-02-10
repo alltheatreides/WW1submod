@@ -45,7 +45,7 @@ ideas={
 			modifier = {
 				attrition = 0.05
 				production_factory_efficiency_gain_factor = -0.05
-				production_factory_max_efficiency_factor = -0.05
+				# production_factory_max_efficiency_factor = -0.05
 				line_change_production_efficiency_factor = -0.05
 
 			}
@@ -119,7 +119,7 @@ ideas={
 			RUS_mikhail_alexeev={ allowed={ tag=RUS } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			RUS_stepan_voevodsky={ allowed={ tag=RUS } traits={ navy_capital_ship_1 } ai_will_do={ factor=1 } }
 			RUS_aleksandr_rusin={ allowed={ tag=RUS } traits={ navy_anti_submarine_1 } ai_will_do={ factor=1 } }
-			RUS_aleksandr_lukomsky={ allowed={ tag=RUS } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			RUS_aleksandr_lukomsky={ allowed={ tag=RUS } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			RUS_pyotr_krasnov={ allowed={ tag=RUS } traits={ army_commando_1 } ai_will_do={ factor=1 } }
 			RUS_andrei_shkuro={ allowed={ tag=RUS } traits={ army_regrouping_1 } ai_will_do={ factor=1 } }
 			}

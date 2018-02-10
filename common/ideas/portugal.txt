@@ -20,7 +20,7 @@ ideas={
 			POR_jose_carlos_de_maia={ allowed={ tag=POR } traits={ navy_chief_decisive_battle_1 } ai_will_do={ factor=1 } }
 			}
 	high_command={
-			POR_joao_martins_de_carvalho={ allowed={ tag=POR } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			POR_joao_martins_de_carvalho={ allowed={ tag=POR } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			POR_antonio_rodrigues_ribeiro={ allowed={ tag=POR } traits={ army_cavalry_1 } ai_will_do={ factor=1 } }
 			POR_vitor_hugo_de_azevedo_coutinho={ allowed={ tag=POR } traits={ navy_screen_1 } ai_will_do={ factor=1 } }
 			POR_joao_do_canto_e_castro={ allowed={ tag=POR } traits={ navy_fleet_logistics_1 } ai_will_do={ factor=1 } }

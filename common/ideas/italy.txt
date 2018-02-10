@@ -44,8 +44,8 @@ ideas={
 			ITA_luigi_cadorna={ allowed={ tag=ITA } traits={ army_regrouping_1 } ai_will_do={ factor=1 } }
 			ITA_armando_diaz={ allowed={ tag=ITA } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			ITA_alberto_pollio={ allowed={ tag=ITA } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
-			ITA_giuseppe_vaccari={ allowed={ tag=ITA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
-			ITA_vittorio_alfieri={ allowed={ tag=ITA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			ITA_giuseppe_vaccari={ allowed={ tag=ITA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
+			# ITA_vittorio_alfieri={ allowed={ tag=ITA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			ITA_leone_viale={ allowed={ tag=ITA } traits={ navy_fleet_logistics_1 } ai_will_do={ factor=1 } }
 			ITA_carlo_porro={ allowed={ tag=ITA } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
 			ITA_pier_angelo_brandimarte={ allowed={ tag=ITA } traits={ navy_anti_submarine_1 } ai_will_do={ factor=1 } }

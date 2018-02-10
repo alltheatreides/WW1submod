@@ -52,7 +52,7 @@ ideas={
 			ENG_frederick_sykes={ allowed={ tag=ENG } traits={ air_close_air_support_1 } ai_will_do={ factor=1 } }
 			#ENG_william_nicholson={ allowed={ tag=ENG } traits={ army_concealment_1 } ai_will_do={ factor=1 } }
 			#ENG_charles_douglas={ allowed={ tag=ENG } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
-			ENG_john_french={ allowed={ tag=ENG } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			ENG_john_french={ allowed={ tag=ENG } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			#ENG_william_robertson={ allowed={ tag=ENG } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			ENG_frederick_lambart={ allowed={ tag=ENG } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			#ENG_john_fisher={ allowed={ tag=ENG } traits={ navy_capital_ship_1 } ai_will_do={ factor=1 } }
@@ -60,13 +60,13 @@ ideas={
 			ENG_louis_alexander_mountbatten={ allowed={ tag=ENG } traits={ navy_screen_1 } ai_will_do={ factor=1 } }
 			#ENG_henry_jackson={ allowed={ tag=ENG } traits={ navy_anti_submarine_1 } ai_will_do={ factor=1 } }
 			#ENG_rosslyn_wemyss={ allowed={ tag=ENG } traits={ navy_amphibious_assault_1 } ai_will_do={ factor=1 } }
-			ENG_beauchamp_duff={ allowed={ tag=ENG } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
-			#ENG_andrew_skeen={ allowed={ tag=ENG } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			# ENG_beauchamp_duff={ allowed={ tag=ENG } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
+			#ENG_andrew_skeen={ allowed={ tag=ENG } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			ENG_herbert_kitchener={ allowed={ tag=ENG } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
 			#ENG_charles_monro={ allowed={ tag=ENG } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			#ENG_g_s_howett={ allowed={ tag=ENG } traits={ navy_fleet_logistics_1 } ai_will_do={ factor=1 } }
 			#ENG_b_h_jones={ allowed={ tag=ENG } traits={ navy_carrier_1 } ai_will_do={ factor=1 } }
-			#ENG_john_bennett={ allowed={ tag=ENG } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			#ENG_john_bennett={ allowed={ tag=ENG } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			ENG_percy_zachariah_cox={ allowed={ tag=ENG } traits={ army_commando_1 } ai_will_do={ factor=1 } }
 			}
 	naval_manufacturer={

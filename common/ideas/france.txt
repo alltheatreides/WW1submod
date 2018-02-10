@@ -142,23 +142,23 @@ ideas = {
                 tag = FRA
             }
             traits = {
-                army_artillery_1
+                army_infantry_2
             }
             ai_will_do = {
                 factor = 1
             }
         }
-        FRA_jean_graziani = {
-            allowed = {
-                tag = FRA
-            }
-            traits = {
-                army_artillery_1
-            }
-            ai_will_do = {
-                factor = 1
-            }
-        }
+        # FRA_jean_graziani = {
+            # allowed = {
+                # tag = FRA
+            # }
+            # traits = {
+                # army_infantry_1
+            # }
+            # ai_will_do = {
+                # factor = 1
+            # }
+        # }
         FRA_louis_pivet = {
             allowed = {
                 tag = FRA

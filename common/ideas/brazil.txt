@@ -32,7 +32,7 @@ ideas={
 			BRA_luis_mendes_de_morais={ allowed={ tag=BRA } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
 			BRA_carlos_guimaraes={ allowed={ tag=BRA } traits={ army_entrenchment_1 } ai_will_do={ factor=1 } }
 			BRA_jose_bernardino_bormann={ allowed={ tag=BRA } traits={ army_concealment_1 } ai_will_do={ factor=1 } }
-			BRA_antinio_adolfo_da_fontoura_mena_barreto={ allowed={ tag=BRA } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			BRA_antinio_adolfo_da_fontoura_mena_barreto={ allowed={ tag=BRA } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			BRA_vespasiano_silva={ allowed={ tag=BRA } traits={ army_commando_1 } ai_will_do={ factor=1 } }
 			BRA_alberto_cardoso_de_aguiar={ allowed={ tag=BRA } traits={ army_regrouping_1 } ai_will_do={ factor=1 } }
 			BRA_alexandrino_faria_de_alencar={ allowed={ tag=BRA } traits={ navy_capital_ship_1 } ai_will_do={ factor=1 } }

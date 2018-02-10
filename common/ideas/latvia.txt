@@ -37,10 +37,10 @@ ideas={
 			LAT_roberts_osis={ allowed={ tag=LAT } traits={ army_logistics_1 } ai_will_do={ factor=1 } }
 			LAT_teodors_zvejnieks={ allowed={ tag=LAT } traits={ navy_carrier_1 } ai_will_do={ factor=1 } }
 			LAT_konstantins_cakste={ allowed={ tag=LAT } traits={ navy_fleet_logistics_1 } ai_will_do={ factor=1 } }
-			LAT_arturs_m_silgailis={ allowed={ tag=LAT } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			LAT_arturs_m_silgailis={ allowed={ tag=LAT } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			LAT_janis_berzins={ allowed={ tag=LAT } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			LAT_izglitibas_tautas={ allowed={ tag=LAT } traits={ air_naval_strike_1 } ai_will_do={ factor=1 } }
-			LAT_arturs_sprogis={ allowed={ tag=LAT } traits={ army_artillery_1 } ai_will_do={ factor=1 } }
+			LAT_arturs_sprogis={ allowed={ tag=LAT } traits={ army_infantry_1 } ai_will_do={ factor=1 } }
 			LAT_jucums_vacietis={ allowed={ tag=LAT } traits={ air_air_superiority_1 } ai_will_do={ factor=1 } }
 			}
 	materiel_manufacturer={

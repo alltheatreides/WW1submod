@@ -20,7 +20,7 @@ ideas={
 			GRE_paulos_kountouriotis={ allowed={ tag=GRE } traits={ navy_chief_decisive_battle_1 } ai_will_do={ factor=1 } }
 			}
 	high_command={
-			#GRE_constantin_moschopoulos={ allowed={ tag=GRE } traits={ army_regrouping_1 } ai_will_do={ factor=1 } }
+			GRE_constantin_moschopoulos={ allowed={ tag=GRE } traits={ army_regrouping_1 } ai_will_do={ factor=1 } }
 			GRE_mark_kerr={ allowed={ tag=GRE } traits={ navy_screen_1 } ai_will_do={ factor=1 } }
 			}
 	naval_manufacturer={

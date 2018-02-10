@@ -883,7 +883,7 @@ ideas = {
 				original_tag = CAN
 			}
 			
-			traits = { army_artillery_2 }
+			traits = { army_infantry_2 }
 			
 			ai_will_do = {
 				factor = 1
@@ -920,20 +920,20 @@ ideas = {
 			}
 		}
 
-		CAN_frederick_m_w_harvey = {
+		# CAN_frederick_m_w_harvey = {
 			
-			picture = generic_army_europe_3
+			# picture = generic_army_europe_3
 
-			allowed = {
-				original_tag = CAN
-			}
+			# allowed = {
+				# original_tag = CAN
+			# }
 			
-			traits = { army_commando_2 }
+			# traits = { army_commando_2 }
 			
-			ai_will_do = {
-				factor = 1
-			}
-		}
+			# ai_will_do = {
+				# factor = 1
+			# }
+		# }
 	}
 	
 	# TECHNOLOGY

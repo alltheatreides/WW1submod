@@ -343,9 +343,9 @@ NMilitary = {
 	MAX_DIVISION_SUPPORT_WIDTH = 2,			-- Max width of support in division designer.
 	MAX_DIVISION_SUPPORT_HEIGHT = 5,		-- Max height of support in division designer.
 	
-	BASE_DIVISION_BRIGADE_GROUP_COST = 25, 	--Base cost to unlock a regiment slot,		#HOI4TGW ::: BASE_DIVISION_BRIGADE_GROUP_COST = 20,
-	BASE_DIVISION_BRIGADE_CHANGE_COST = 9,	--Base cost to change a regiment column.	#HOI4TGW ::: BASE_DIVISION_BRIGADE_CHANGE_COST = 5,
-	BASE_DIVISION_SUPPORT_SLOT_COST = 13, 	--Base cost to unlock a support slot		#HOI4TGW ::: BASE_DIVISION_SUPPORT_SLOT_COST = 10,
+	BASE_DIVISION_BRIGADE_GROUP_COST = 5, 	--Base cost to unlock a regiment slot,		#HOI4TGW ::: BASE_DIVISION_BRIGADE_GROUP_COST = 20,
+	BASE_DIVISION_BRIGADE_CHANGE_COST = 1,	--Base cost to change a regiment column.	#HOI4TGW ::: BASE_DIVISION_BRIGADE_CHANGE_COST = 5,
+	BASE_DIVISION_SUPPORT_SLOT_COST = 5, 	--Base cost to unlock a support slot		#HOI4TGW ::: BASE_DIVISION_SUPPORT_SLOT_COST = 10,
 	
 	MAX_ARMY_EXPERIENCE = 999,			--Max army experience a country can store		#HOI4TGW ::: MAX_ARMY_EXPERIENCE = 500,
 	MAX_NAVY_EXPERIENCE = 999,			--Max navy experience a country can store		#HOI4TGW ::: MAX_NAVY_EXPERIENCE = 500,
@@ -408,13 +408,13 @@ NMilitary = {
 	WARSCORE_MIN_HOURS = 48,						-- minimum hours
 	UNIT_EXPERIENCE_PER_COMBAT_HOUR = 0.0002,
 	UNIT_EXPERIENCE_SCALE = 1.0,
-	UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0015,
+	UNIT_EXPERIENCE_PER_TRAINING_DAY = 0.0001,
 	TRAINING_MAX_LEVEL = 2,
 	DEPLOY_TRAINING_MAX_LEVEL = 1,
 	TRAINING_EXPERIENCE_SCALE = 62.0,
 	TRAINING_ORG = 0.2,
 	ARMY_EXP_BASE_LEVEL = 1,
-	UNIT_EXP_LEVELS = { 0.1, 0.3, 0.75, 0.9 },		-- Experience needed to progress to the next level
+	UNIT_EXP_LEVELS = { 0.1, 0.3, 0.75, 1.5 },		-- Experience needed to progress to the next level
 	FIELD_EXPERIENCE_SCALE = 0.002,
 	FIELD_EXPERIENCE_MAX_PER_DAY = 3,				-- Most xp you can gain per day
 	EXPEDITIONARY_FIELD_EXPERIENCE_SCALE = 0.5,		-- reduction factor in Xp from expeditionary forces

@@ -4,6 +4,7 @@
 ###############################################################################
 
 phases = { # phase = no is the standard phase
+	Default
 	close_combat
 	tactical_withdrawal
 	seize_bridge
@@ -15,7 +16,10 @@ tactic_basic_attack = {
 	is_attacker = yes
 	trigger = { # combined scope for both country and combatant
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -32,7 +36,10 @@ tactic_basic_defend = {
 	is_attacker = no
 	trigger = {
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -48,7 +55,10 @@ tactic_counterattack = { # counters basic attack, assault
 	trigger = {
 		is_attacker = no
 		skill_advantage > 0
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -64,7 +74,10 @@ tactic_assault = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -155,7 +168,7 @@ tactic_cc_withdraw = {
 	picture = cc_withdraw
 	display_phase = close_combat
 
-	phase = no #changes phase to no
+	phase = Default #changes phase to Default
 	
 	attacker = -0.05
 	defender = -0.05
@@ -166,21 +179,16 @@ tactic_encirclement = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 		frontage_full = yes
 		has_reserves = yes
 		OR = {
 			skill_advantage > 0
 			has_trait = panzer_leader
-			has_trait = panzer_leader_II
-			has_trait = panzer_leader_III
-			has_trait = trickster_CC
-			has_trait = trickster_CC_II
-			has_trait = trickster_CC_III
-			has_trait = trickster_FM
-			has_trait = trickster_FM_II
-			has_trait = trickster_FM_III
-
+			has_trait = trickster
 		}
 	}
 	
@@ -199,7 +207,10 @@ tactic_delay = {
 	is_attacker = no
 	trigger = {
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -208,7 +219,7 @@ tactic_delay = {
 	picture = delay
 	countered_by = tactic_shock
 	
-	attacker_movement_speed = -0.25		#
+	attacker_movement_speed = -0.25	
 	attacker = -0.25
 	defender = -0.15
 }
@@ -217,7 +228,10 @@ tactic_shock = { #counters delay
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -233,19 +247,17 @@ tactic_tactical_withdrawal = { #counters encirclement
 	is_attacker = no
 	trigger = {
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			skill_advantage > 0
-			has_trait = trickster_CC
-			has_trait = trickster_CC_II
-			has_trait = trickster_CC_III
-			has_trait = trickster_FM
-			has_trait = trickster_FM_II
-			has_trait = trickster_FM_III
+			has_trait = trickster
 		}
 	}
 	
-	active = yes
+	active = no
 	
 	base = 4
 	picture = withdraw
@@ -330,7 +342,7 @@ tactic_tw_intercept = {
 	picture = tw_intercept
 	display_phase = tactical_withdrawal
 	
-	phase = no
+	phase = Default
 		
 	attacker = -0.05
 	defender = -0.1
@@ -342,7 +354,10 @@ tactic_breakthrough = { #counters ambush
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			hardness > 0.5
 			skill_advantage > 1
@@ -365,16 +380,14 @@ tactic_ambush = { #counters shock
 	is_attacker = no
 	trigger = {
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			skill_advantage > 1
 			skill > 2
-			has_trait = trickster_CC
-			has_trait = trickster_CC_II
-			has_trait = trickster_CC_III
-			has_trait = trickster_FM
-			has_trait = trickster_FM_II
-			has_trait = trickster_FM_III
+			has_trait = trickster
 		}
 	}
 	
@@ -392,12 +405,13 @@ tactic_blitz = {
 	trigger = {
 		is_attacker = yes
 		hardness > 0.5
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			skill > 2
 			has_trait = panzer_leader
-			has_trait = panzer_leader_II
-			has_trait = panzer_leader_III
 			skill_advantage > 1
 		}
 	}
@@ -418,15 +432,12 @@ tactic_elastic_defense = { #counters blitz
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
 		OR = {
-			has_trait = defensive_doctrine_CC
-			has_trait = defensive_doctrine_CC_II
-			has_trait = defensive_doctrine_CC_III
-			has_trait = defensive_doctrine_FM
-			has_trait = defensive_doctrine_FM_II
-			has_trait = defensive_doctrine_FM_III
-
+		phase = no
+			phase = Default
+		}
+		OR = {
+			has_trait = defensive_doctrine
 			skill > 2
 		}
 	}
@@ -445,20 +456,20 @@ tactic_backhand_blow = { #counters breakthrough
 	is_attacker = no
 	trigger = {
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			skill > 4
 			AND = {
-			has_trait = defensive_doctrine_CC
-			has_trait = defensive_doctrine_CC_II
-			has_trait = defensive_doctrine_CC_III
-			has_trait = defensive_doctrine_FM
-			has_trait = defensive_doctrine_FM_II
-			has_trait = defensive_doctrine_FM_III
+				has_trait = defensive_doctrine
 				skill > 3
 			}
 		}
 	}
+	
+	active = no
 	
 	base = 4
 	picture = backhand_blow
@@ -473,17 +484,14 @@ tactic_seize_bridge = {
 	trigger = {
 		is_attacker = yes
 		has_combat_modifier = river_crossing
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			skill > 3
 			AND = {
-				has_trait = offensive_doctrine_CC
-				has_trait = offensive_doctrine_CC_II
-				has_trait = offensive_doctrine_CC_III
-				has_trait = offensive_doctrine_FM
-				has_trait = offensive_doctrine_FM_II
-				has_trait = offensive_doctrine_FM_III
-
+				has_trait = offensive_doctrine
 				skill > 2
 			}
 		}
@@ -566,12 +574,7 @@ tactic_defender_sb_retake_bridge = {
 		phase = seize_bridge
 		OR = {
 			skill > 2
-			has_trait = trickster_CC
-			has_trait = trickster_CC_II
-			has_trait = trickster_CC_III
-			has_trait = trickster_FM
-			has_trait = trickster_FM_II
-			has_trait = trickster_FM_III
+			has_trait = trickster
 		}
 	}
 	
@@ -592,15 +595,13 @@ tactic_hold_bridge = {
 	trigger = {
 		has_combat_modifier = river_crossing
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			skill > 2
-			has_trait = defensive_doctrine_CC
-			has_trait = defensive_doctrine_CC_II
-			has_trait = defensive_doctrine_CC_III
-			has_trait = defensive_doctrine_FM
-			has_trait = defensive_doctrine_FM_II
-			has_trait = defensive_doctrine_FM_III
+			has_trait = defensive_doctrine
 		}
 	}
 	
@@ -685,12 +686,7 @@ tactic_defender_hb_skillful_defence = {
 		phase = hold_bridge
 		OR = {
 			skill > 2
-			has_trait = trickster_CC
-			has_trait = trickster_CC_II
-			has_trait = trickster_CC_III
-			has_trait = trickster_FM
-			has_trait = trickster_FM_II
-			has_trait = trickster_FM_III
+			has_trait = trickster
 		}
 	}
 	
@@ -707,15 +703,13 @@ tactic_guerrilla_tactics = { #People's army defender tactic. also for German vol
 	is_attacker = no
 	trigger = {
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 		OR = {
 			skill > 2
-			has_trait = trickster_CC
-			has_trait = trickster_CC_II
-			has_trait = trickster_CC_III
-			has_trait = trickster_FM
-			has_trait = trickster_FM_II
-			has_trait = trickster_FM_III
+			has_trait = trickster
 		}
 	}
 	
@@ -733,7 +727,10 @@ tactic_human_wave_tactics = { #People's army attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 		frontage_full = yes
 		has_reserves = yes
 	}
@@ -753,7 +750,10 @@ tactic_banzai_charge = { #Special Japan attacker tactic
 	trigger = {
 		tag = JAP
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -772,7 +772,10 @@ tactic_infantry_charge = { #GBP -> Infantry attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -788,7 +791,10 @@ tactic_planned_attack = { #GBP -> Armor attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -803,7 +809,10 @@ tactic_relentless_assault = { #Deep battle attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -820,7 +829,10 @@ tactic_unexpected_thrust = { #Mobile warfare attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -836,7 +848,10 @@ tactic_overwhelming_fire = { # Counters Banzai charge
 	is_attacker = no
 	trigger = {
 		is_attacker = no
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -852,7 +867,10 @@ tactic_barrage = { #Superior firepower attacker tactic
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
+		OR = {
 		phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -876,12 +894,7 @@ tactic_dtd_operation_attack = {
 		OR = {
 			hardness < 0.25
 			skill_advantage < 1
-			has_trait = trickster_CC
-			has_trait = trickster_CC_II
-			has_trait = trickster_CC_III
-			has_trait = trickster_FM
-			has_trait = trickster_FM_II
-			has_trait = trickster_FM_III
+			has_trait = trickster
 		}
 	}
 	
@@ -900,7 +913,10 @@ tactic_infantry_advance = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+				OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -916,7 +932,10 @@ tactic_dispersed_infantry = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+			OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -930,7 +949,10 @@ tactic_infiltration_infantry = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+				OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -944,7 +966,10 @@ tactic_stormtroopers = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -958,7 +983,10 @@ tactic_tunnel_mine = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -973,7 +1001,10 @@ tactic_barbed_wire = {
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -988,7 +1019,10 @@ tactic_sniper = {
 	is_attacker = no
 	trigger = {
 		is_attacker = no
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = yes
@@ -1003,7 +1037,10 @@ tactic_offensive_prep = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1018,7 +1055,10 @@ tactic_harassment_fire = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1032,7 +1072,10 @@ tactic_rear_area_fire = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1046,7 +1089,10 @@ tactic_dummy_barrage = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1060,7 +1106,10 @@ tactic_standing_barrage = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1074,7 +1123,10 @@ tactic_box_barrage = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1088,7 +1140,10 @@ tactic_block_barrage = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1103,7 +1158,10 @@ tactic_creeping_barrage = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1117,7 +1175,10 @@ tactic_rolling_barrage = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1131,8 +1192,10 @@ tactic_infantry_armor = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
-	}
+		OR = {
+			phase = no
+			phase = Default
+		}	}
 	
 	active = no
 	
@@ -1145,7 +1208,10 @@ tactic_infantry_artillery_armor = {
 	is_attacker = yes
 	trigger = {
 		is_attacker = yes
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 	}
 	
 	active = no
@@ -1160,12 +1226,13 @@ tactic_winterketten = {
 	trigger = {
 		is_attacker = yes
 		hardness > 0.5
-		phase = no
+		OR = {
+			phase = no
+			phase = Default
+		}
 		OR = {
 			skill > 2
-			has_trait = winter_specialist_CC
-			has_trait = winter_specialist_CC_II
-			has_trait = winter_specialist_CC_III
+			has_trait = winter_specialist
 			skill_advantage > 1
 		}
 	}
