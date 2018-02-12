@@ -84,6 +84,7 @@ buildings = {
 		land_fort = 1
 		max_level = 10
 		value = 1
+		infrastructure_construction_effect = yes
 	}
 
 	coastal_bunker = {
