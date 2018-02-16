@@ -24,7 +24,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 4
+		combat_width = 3
 		
 		#Size Definitions
 		max_strength = 25
@@ -43,6 +43,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 100
 			heavy_infantry_equipment = 9
+			
 
 		}
 	}
@@ -67,7 +68,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 4
+		combat_width = 3
 		
 		#Size Definitions
 		max_strength = 25
@@ -86,6 +87,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 100
 			heavy_infantry_equipment = 9
+			
 		}
 	}
 	
@@ -111,7 +113,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 4
+		combat_width = 3
 		
 		#Size Definitions
 		max_strength = 20
@@ -165,7 +167,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 4
+		combat_width = 3
 		
 		#Size Definitions
 		max_strength = 20
@@ -220,7 +222,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 4
+		combat_width = 3
 		
 		#Size Definitions
 		max_strength = 22
@@ -262,7 +264,7 @@ sub_units = {
 			category_army
 		}
 		
-		combat_width = 4
+		combat_width = 3
 		
 		#Size Definitions
 		max_strength = 25
@@ -283,7 +285,7 @@ sub_units = {
 			infantry_equipment = 100
 			motorized_equipment = 50
 			heavy_infantry_equipment = 9
-			
+						
 		}
 
 		forest = {
@@ -332,7 +334,7 @@ sub_units = {
 			category_army
 		}
 
-		combat_width = 4
+		combat_width = 3
 
 		#Offensive Abilities
 		soft_attack = 0.1
@@ -367,7 +369,7 @@ sub_units = {
 			mechanized_equipment = 50
 			infantry_equipment = 100
 			heavy_infantry_equipment = 18
-			
+						
 		}
 
 		forest = {
