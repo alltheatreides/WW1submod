@@ -26,6 +26,7 @@ sub_units = {
 
 		need = {
 			artillery_equipment = 12
+			shells_ammunition = 150
 		}
 		manpower = 300
 		training_time = 120
@@ -51,7 +52,7 @@ sub_units = {
 		priority = 0
 		active = yes
 		type = { infantry support }
-		need = { light_field_gun_equipment=12 }
+		need = { light_field_gun_equipment=12 shells_ammunition = 150 }
 		categories = { category_support_battalions category_army category_artillery }
 		map_icon_category = infantry
 		group = support
