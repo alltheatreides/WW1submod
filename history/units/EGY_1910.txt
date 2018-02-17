@@ -26,14 +26,14 @@ division_template = {
 	}
 }
 
-# division_template = {
-	# name = "Infantry Brigade"
-	# regiments = {
-		# infantry = { x = 0 y = 0 }
-		# infantry = { x = 1 y = 0 }
-	# }
-	# priority = 0
-# }
+division_template = {
+	name = "Infantry Brigade"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 0
+}
 
 division_template = {
 	name = "Cavalry Division"
