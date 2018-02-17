@@ -14,33 +14,5 @@ spriteTypes = {
 #####text-icons##### (when hovering the division on the map)
 	spriteType = {		name = "GFX_unit_militia_icon_small"		                    texturefile = "gfx/texticons/nato_unit_militia_icon_small.dds"		                    legacy_lazy_load = no		noOfFrames = 2	}
 	spriteType = {		name = "GFX_unit_light_infantry_icon_small"		                texturefile = "gfx/texticons/nato_unit_light_infantry_icon_small.dds"		            legacy_lazy_load = no		noOfFrames = 2	}
-
-
-	#AMMUNITION
-	SpriteType = {
-		name = "GFX_small_arms_ammunition_0_medium"
-		texturefile = "gfx/interface/technologies/small_arms_ammunition_0.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_shells_ammunition_medium"
-		texturefile = "gfx/interface/technologies/shells_ammunition_0.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_shells_ammunition_0_medium"
-		texturefile = "gfx/interface/technologies/shells_ammunition_0.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_shells_ammunition_1_medium"
-		texturefile = "gfx/interface/technologies/shells_ammunition_0.dds"
-	}
-	
-	SpriteType = {
-		name = "GFX_shells_ammunition_2_medium"
-		texturefile = "gfx/interface/technologies/shells_ammunition_0.dds"
-	}
 	
 }
-

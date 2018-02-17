@@ -859,7 +859,7 @@ ideas = {
 		generic_army_chief_off = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { army_chief_offensive_1 }
@@ -868,7 +868,7 @@ ideas = {
 		generic_army_chief_def = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { army_chief_defensive_1 }
@@ -922,8 +922,7 @@ ideas = {
 		generic_army_art = {
 			
 			allowed = {
-				OR = { original_tag = KOR original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
-				NOT = { original_tag = SER }
+				OR = { original_tag = KOR original_tag = SER original_tag = ICE original_tag = SYR original_tag = LEB original_tag = EGY original_tag = JOR original_tag = CRO original_tag = LBA original_tag = INS original_tag = MAL original_tag = AZR original_tag = UKR original_tag = GEO original_tag = ARM original_tag = VIN original_tag = CAM original_tag = MNT original_tag = LIB original_tag = LAO original_tag = PAL }
 			}
 			
 			traits = { army_infantry_1 }			

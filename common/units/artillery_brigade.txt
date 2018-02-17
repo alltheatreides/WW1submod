@@ -5,7 +5,7 @@ sub_units = {
 		priority = 1198
 		active = yes
 		type = { infantry artillery }
-		need = { light_field_gun_equipment=12 shells_ammunition = 150 }
+		need = { light_field_gun_equipment=12 }
 		categories = { category_army category_line_artillery category_artillery }
 		map_icon_category = infantry
 		group = infantry

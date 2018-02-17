@@ -14,7 +14,7 @@ sub_units = {
         }
         map_icon_category = armored
         group = armor
-        combat_width = 3
+        combat_width = 4
         training_time = 180
         max_strength = 2
         max_organisation = 10

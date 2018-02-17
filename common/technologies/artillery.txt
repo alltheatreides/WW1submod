@@ -4,7 +4,6 @@ technologies = {
 
 		enable_equipments = {
 			light_field_gun_equipment_1
-			shells_ammunition_0
 		}
 
 		start_year = 1900
@@ -39,7 +38,6 @@ technologies = {
 
 		enable_equipments = {
 			heavy_field_gun_equipment_1
-			shells_ammunition_0
 		}
 
 		start_year = 1900
@@ -104,7 +102,6 @@ technologies = {
 
 		enable_equipments = {
 			heavy_field_gun_equipment_2
-			shells_ammunition_1
 		}
 		
 		path = {
@@ -166,7 +163,6 @@ technologies = {
 
 		enable_equipments = {
 			heavy_field_gun_equipment_3
-			shells_ammunition_2
 		}
 
 		path = {
@@ -268,7 +264,6 @@ technologies = {
 
 		enable_equipments = {
 			light_field_gun_equipment_2
-			shells_ammunition_1
 		}
 		
 		path = {

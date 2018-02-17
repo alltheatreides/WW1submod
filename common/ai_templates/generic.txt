@@ -467,13 +467,13 @@ garrison_generic = {
 infantry_generic = {
 
 	blocked_for = {
-		# GER
-		# JAP
-		# ENG
-		# USA
-		# ITA
-		# SOV
-		# CHI
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
+		CHI
 	}
 
 	roles = {
@@ -547,7 +547,7 @@ infantry_generic = {
 			}
 			
 			regiments = {
-				infantry = 12
+				infantry = 9
 				artillery_brigade = 4
 			}
 		}
@@ -571,12 +571,12 @@ infantry_generic = {
 mountaineers_generic = {
 
 	blocked_for = {
-		# GER
-		# JAP
-		# ENG
-		# USA
-		# ITA
-		# SOV
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
 	}
 
 	roles = {
@@ -653,7 +653,7 @@ mountaineers_generic = {
 			}
 			
 			regiments = {
-				mountaineers = 12
+				mountaineers = 9
 				artillery_brigade = 4
 			}
 		}
@@ -674,12 +674,12 @@ mountaineers_generic = {
 marines_generic = {
 
 	blocked_for = {
-		# GER
-		# JAP
-		# ENG
-		# USA
-		# ITA
-		# SOV
+		GER
+		JAP
+		ENG
+		USA
+		ITA
+		SOV
 	}
 
 	roles = {
@@ -753,7 +753,7 @@ marines_generic = {
 				logistics_company = 1
 			}
 			
-			regiments = { marine = 12 artillery_brigade = 4 }
+			regiments = { marine = 9 artillery_brigade = 4 }
 		}
 
 		
